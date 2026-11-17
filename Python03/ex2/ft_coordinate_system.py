@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+
+
+import math
+
+
+def main() -> None:
+    center = (0.0, 0.0, 0.0)
+
+    print("=== Game Coordinate System ===")
+    print()
+    print("Get a first set of coordinates")
+    p1 = get_player_pos()
+    print(f"Got a first tuple: {p1}")
+    x, y, z = p1
+    print(f"It includes: X={x}, Y={y}, Z={z}")
+    print(
+            "Distance to center: "
+            f"{round(calculate_distance(p1, center), 4)}"
+            )
+    print()
+    print("Get a second set of coordinates")
+    p2 = get_player_pos()
+    print(
+            "Distance between the 2 sets of coordinates: "
+            f"{round(calculate_distance(p1, p2), 4)}"
+            )
+
+
+def get_player_pos() -> tuple[float, float, float]:
+    while True:
+        pos: list[float] = []
+
+        coordinates = input(
+                "Enter new coordinates as floats in format 'x,y,z': "
+                )
+        values = coordinates.split(",")
+        if len(values) != 3:
+            print("Invalid syntax")
+            continue
+        for value in values:
+            try:
+                pos.append(float(value.strip()))
+            except ValueError:
+                print(
+                        f"Error on parameter '{value.strip()}': "
+                        f"could not convert string to float: '{value.strip()}'"
+                        )
+        if len(pos) == 3:
+            break
+    return (pos[0], pos[1], pos[2])
+
+
+def calculate_distance(
+        p1: tuple[float, float, float],
+        p2: tuple[float, float, float]
+        ) -> float:
+    return math.sqrt((p2[0]-p1[0])**2 + (p2[1]-p1[1])**2 + (p2[2]-p1[2])**2)
+
+
+if __name__ == "__main__":
+    main()
