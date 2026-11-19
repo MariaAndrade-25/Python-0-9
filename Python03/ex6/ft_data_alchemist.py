@@ -5,7 +5,7 @@ import random
 def main() -> None:
     players: list[str] = [
         'Alice', 'bob', 'Charlie', 'dylan', 'Emma',
-        'Gregory', 'john', 'kevin', 'Liam'
+        'Gregory', 'john', 'kevin', 'Liam', 'Maria'
     ]
     print("=== Game Data Alchemist ===")
     print(f"Initial list of players: {players}")
