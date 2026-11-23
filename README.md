@@ -33,8 +33,6 @@ A jornada evolui de forma incremental:
 | **Module 04** | Manipulação de Arquivos e Streams | `open()`, gerenciadores de contexto (`with`), leitura/escrita e tratamento de I/O |
 | **Module 05** | Polimorfismo e Interfaces | Classes Abstratas (`abc.ABC`), `@abstractmethod`, duck typing e composição |
 | **Module 06** | Módulos, Pacotes e Imports | Estruturação de pacotes (`__init__.py`), imports relativos/absolutos e namespaces |
-| **Module 07** | Design Patterns e Arquitetura | Padrões criacionais, estruturais e comportamentais aplicados em Python |
-| **Module 08** | Recursos Avançados e Metaprogramação | Decorators, iteradores, generators (`yield`), closures e `*args` / `**kwargs` |
 | **Module 09** | Engenharia de Dados e Validação | Type hints avançados, dataclasses/modelos, parsing e pipelines robustos |
 
 ---
