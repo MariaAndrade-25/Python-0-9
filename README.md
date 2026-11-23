@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" 
        alt="Python programming" 
-       width="500">
+       width="300">
 </p>
 
 Projetos desenvolvidos durante a formação da **42 São Paulo**, cobrindo toda a trilha de Python: desde os fundamentos de sintaxe e coleções até Programação Orientada a Objetos avançada, manipulação de arquivos, design patterns, engenharia de pacotes e arquitetura de software.
