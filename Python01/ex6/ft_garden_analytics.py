@@ -61,7 +61,6 @@ class Plant:
     def display_statistics(self):
         self.__system.display(self.name)
 
-
 class Flower(Plant):
     def __init__(self, name, height, age, color):
         super().__init__(name, height, age)
@@ -78,7 +77,6 @@ class Flower(Plant):
             print(f"{self.name} is blooming beautifully!")
         else:
             print(f"{self.name} has not bloomed yet")
-
 
 class Tree(Plant):
     def __init__(self, name, height, age, trunk_diameter):
@@ -101,7 +99,6 @@ class Tree(Plant):
         super().display_statistics()
         self._Plant__system.display_shade()
 
-
 class Seed(Flower):
     def __init__(self, name, height, age, color, seeds=0):
         super().__init__(name, height, age, color)
@@ -115,13 +112,10 @@ class Seed(Flower):
         super().show()
         print(f"Seeds: {self.seeds}")
 
-
 def display_statistics(plant):
     plant.display_statistics()
 
-
 print("=== Garden statistics ===")
-
 print("=== Check year-old")
 print(
     "Is 30 days more than a year? ->",
